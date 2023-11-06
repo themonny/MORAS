@@ -1,0 +1,28 @@
+CHIP Div2
+{
+	IN in[16];
+	OUT out[16];
+	PARTS:
+	Not(in=in[0], out=NotOut);
+    Or(a=in[0], b=in[0], out=OrOut);
+
+    
+    And(a=in[0], b=NotOut, out=out[0]);
+    And(a=OrOut, b=in[1], out=out[1]);
+    And(a=OrOut, b=NotOut, out=out[2]);
+    And(a=in[2], b=NotOut, out=out[3]);
+    And(a=in[3], b=NotOut, out=out[4]);
+    And(a=in[4], b=NotOut, out=out[5]);
+    And(a=in[5], b=NotOut, out=out[6]);
+    And(a=in[6], b=NotOut, out=out[7]);
+    And(a=in[7], b=NotOut, out=out[8]);
+    And(a=in[8], b=NotOut, out=out[9]);
+    And(a=in[9], b=NotOut, out=out[10]);
+    And(a=in[10], b=NotOut, out=out[11]);
+    And(a=in[11], b=NotOut, out=out[12]);
+    And(a=in[12], b=NotOut, out=out[13]);
+    And(a=in[13], b=NotOut, out=out[14]);
+    And(a=in[14], b=NotOut, out=out[15]);
+   
+}
+	

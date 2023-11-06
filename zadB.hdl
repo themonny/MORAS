@@ -1,0 +1,10 @@
+CHIP zadB {
+	IN x,y,z;
+	OUT out;
+	
+	PARTS:
+	Not(in=y,out=Noty);
+	And(a=x,b=z,out=xAndz);
+	And(a=xAndz,b=Noty,out=out);
+
+}
